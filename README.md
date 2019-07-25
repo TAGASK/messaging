@@ -1,8 +1,8 @@
-Firebase Cloud Messaging Quickstart
+Firebase Cloud Messaging Dynamic Feature
 ==============================
 
-The Firebase Cloud Messaging Android Quickstart app demonstrates registering
-an Android app for notifications and handling the receipt of a message.
+The Firebase Cloud Messaging Android Feature app demonstrates registering
+an Android app for notifications
 **InstanceID** allows easy registration while **FirebaseMessagingService** and **FirebaseInstanceIDService**
 enable token refreshes and message handling on the client.
 

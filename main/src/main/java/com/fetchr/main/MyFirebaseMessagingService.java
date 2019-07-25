@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.firebase.quickstart.fcm.java;
+package com.fetchr.main;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -31,8 +31,6 @@ import com.fetchr.customerapp.alpha.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-import androidx.work.OneTimeWorkRequest;
-import androidx.work.WorkManager;
 
 /**
  * NOTE: There can only be one service in each app that receives FCM messages. If multiple
@@ -124,11 +122,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      * Schedule async work using WorkManager.
      */
     private void scheduleJob() {
-        // [START dispatch_job]
-        OneTimeWorkRequest work = new OneTimeWorkRequest.Builder(MyWorker.class)
-                .build();
-        WorkManager.getInstance().beginWith(work).enqueue();
-        // [END dispatch_job]
     }
 
     /**

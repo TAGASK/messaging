@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.firebase.quickstart.fcm.java;
+package com.fetchr.main;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.fetchr.main.R.layout.activity_main);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // Create channel to show notifications.
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         }
         // [END handle_data_extras]
 
-        Button subscribeButton = findViewById(R.id.subscribeButton);
+        Button subscribeButton = findViewById(com.fetchr.main.R.id.subscribeButton);
         subscribeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button logTokenButton = findViewById(R.id.logTokenButton);
+        Button logTokenButton = findViewById(com.fetchr.main.R.id.logTokenButton);
         logTokenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
